@@ -1,0 +1,362 @@
+SalesEnablement:
+  url: 'https://jira.rax.io'
+  projects:
+    - gscs
+    - sfdc
+  states:
+    new:
+      - new
+    open:
+      - open
+      - in analysis
+      - ready for development
+      - in development
+      - in progress
+      - blocked
+      - ready for peer review
+      - in review
+      - in peer review
+    test:
+      - resolved
+      - ready for test
+      - in test
+      - ready for uat
+      - in uat
+      - ready for deploy
+    closed:
+      - done
+      - merged
+      - closed
+  order:
+    - new
+    - open
+    - test
+    - closed
+
+RBA:
+  url: 'https://jira.rax.io'
+  projects:
+    - RBAN
+    - ARIC
+  states:
+    new:
+      - new
+    open:
+      - open
+      - in analysis
+      - ready for development
+      - in development
+      - in progress
+      - hold
+      - blocked
+      - ready for peer review
+      - in peer review
+      - in review
+    test:
+      - resolved
+      - ready for test
+      - in test
+      - ready for uat
+      - in uat
+      - ready for deploy
+    closed:
+      - done
+      - merged
+      - closed
+  order:
+    - new
+    - open
+    - test
+    - closed
+
+
+CORE:
+  url: 'https://jira.rax.io'
+  projects:
+    - CORE
+#   - DVSVC   (not a TES Standard Project)
+    - RCR
+  states:
+    new:
+      - new
+    open:
+      - open
+      - prioritized
+      - in analysis
+      - ready for development
+      - in development
+      - in progress
+      - blocked
+      - ready for peer review
+      - in peer review
+      - peer review
+      - in review
+    test:
+      - resolved
+      - ready for test
+      - in test
+      - ready for uat
+      - user accpetance testing
+      - in uat
+      - dba review
+      - ready to merge
+      - integration testing
+      - ready for deploy
+      - releasing
+    closed:
+      - done
+      - merged
+      - closed
+      - rejected
+  order:
+    - new
+    - open
+    - test
+    - closed
+
+PORTAL:
+  url: 'https://jira.rax.io'
+  projects:
+    - EPS
+    - GD
+    - PILOT
+    - MYRK
+    - REACH
+    - MOB
+    - PORTAL
+    - VALK
+  states:
+    new:
+      - new
+      - kickoff
+      - backlog
+    open:
+      - in analysis
+      - accepted
+      - approved
+      - review request
+      - bug backlog
+      - more info required
+      - ready for development
+      - ready for dev
+      - open
+      - in development
+      - in dev
+      - in progress
+      - blocked
+      - ready for peer review
+      - in peer review
+      - in review
+      - development approval
+      - peer review
+      - dev done
+    test:
+      - resolved
+      - ready for qe
+      - ready for test
+      - in test
+      - ready for uat
+      - in uat
+      - user acceptance testing
+      - manager approval
+      - integration testing
+      - ready for deploy
+      - ready to merge
+      - releasing
+      - test implementation
+      - bug validated
+    closed:
+      - done
+      - merged
+      - closed
+      - "closed: rejected"
+      - "closed: approved"
+  order:
+    - new
+    - open
+    - test
+    - closed
+
+Billing:
+  url: 'https://jira.rax.io'
+  projects:
+    - ACT
+    - BRM
+    - CBUI
+    - EOD
+    - FASTLN
+    - SL
+  states:
+    new:
+      - new
+    open:
+      - open
+      - analysis
+      - in analysis
+      - ready for development
+      - in development
+      - in progress
+      - blocked
+      - ready for peer review
+      - in review
+      - in peer review
+      - peer review
+      - reviewed
+      - reopened
+    test:
+      - validation
+      - resolved
+      - ready for staging
+      - in staging/pre-prod
+      - ready for test
+      - in test
+      - in qe
+      - ready for uat
+      - ready for sit
+      - qe sit - in progress
+      - in uat
+      - qe approved
+      - accepted
+      - ready for deploy
+      - pending prod validation
+      - ready for production
+    closed:
+      - done
+      - merged
+      - closed
+  order:
+    - new
+    - open
+    - test
+    - closed
+
+ERP:
+  url: 'https://jira.rax.io'
+  projects:
+    - BIA
+    - EBS
+    - FMW
+  states:
+    new:
+      - new
+    open:
+      - open
+      - analysis
+      - in analysis
+      - ready for development
+      - in development
+      - in progress
+      - blocked
+      - ready for peer review
+      - in review
+      - in peer review
+      - peer review
+      - reviewed
+      - reopened
+    test:
+      - validation
+      - resolved
+      - ready for staging
+      - in staging/pre-prod
+      - ready for test
+      - in test
+      - in qe
+      - ready for uat
+      - ready for sit
+      - qe sit - in progress
+      - in uat
+      - qe approved
+      - accepted
+      - ready for deploy
+      - pending prod validation
+      - ready for production
+    closed:
+      - done
+      - merged
+      - closed
+  order:
+    - new
+    - open
+    - test
+    - closed
+
+QE_Only:
+  url: 'https://jira.rax.io'
+  projects:
+    - ALDI
+    - ALD
+    - ALT
+    - APOLLO
+    - ASTRA
+    - BAREMETAL
+    - BPI
+    - BPIT
+    - CF
+    - CID
+    - CP
+    - CUST
+    - DATA
+    - DCXIS
+    - DCXOSLINUX
+    - DCXOSWIN
+    - DCXPS
+    - EOD
+    - ETA
+    - ETU
+    - GDL
+    - MTR
+    - NSDCX
+    - NWT
+    - RNS
+    - SDP
+    - SU
+    - TS
+  states:
+    new:
+      - new
+      - not yet started
+      - on deck
+      - in review
+      - approved
+    open:
+      - open
+      - started
+      - analysis
+      - in analysis
+      - ready for development
+      - in development
+      - in progress
+      - blocked
+      - ready for peer review
+      - in peer review
+      - peer review
+      - code review
+      - reviewed
+      - reopened
+    test:
+      - validation
+      - resolved
+      - ready for staging
+      - in staging/pre-prod
+      - ready for test
+      - in test
+      - in qe
+      - ready for uat
+      - ready for sit
+      - qe sit - in progress
+      - in uat
+      - qe approved
+      - accepted
+      - ready for deploy
+      - pending prod validation
+      - ready for production
+      - ready for staging deploy
+    closed:
+      - done
+      - merged
+      - closed
+  order:
+    - new
+    - open
+    - test
+    - closed
